@@ -43,20 +43,20 @@ const RichTextEditor: React.FC<RichTextEditorProps> = ({ value, onChange }) => {
     <div className="border border-gray-300 rounded-lg overflow-hidden focus-within:ring-2 focus-within:ring-indigo-500 focus-within:border-indigo-500">
       <div className="p-2 bg-gray-100 border-b border-gray-300 flex items-center space-x-2">
         <EditorButton onMouseDown={(e) => {e.preventDefault(); handleCommand('bold')}} title="Bold">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" transform="scale(0.8) translate(2,2)" filter="url(#bold-filter)"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path></filter><defs><filter id="bold-filter"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"></path></filter></defs><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5h3.5a3.5 3.5 0 0 1 0 7H8V5zm0 7h4.5a3.5 3.5 0 0 1 0 7H8v-7z"></path></svg>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5h3.5a3.5 3.5 0 0 1 0 7H8V5zm0 7h4.5a3.5 3.5 0 0 1 0 7H8v-7z"></path></svg>
         </EditorButton>
         <EditorButton onMouseDown={(e) => {e.preventDefault(); handleCommand('italic')}} title="Italic">
-           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 5L14 19"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 19h14"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5h14"></path></svg>
+           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 5L14 19M5 19h8m-4-14h8"></path></svg>
         </EditorButton>
         <EditorButton onMouseDown={(e) => {e.preventDefault(); handleCommand('underline')}} title="Underline">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 19h14"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5v10a4 4 0 1 0 8 0V5"></path></svg>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 19h14M8 5v10a4 4 0 1 0 8 0V5"></path></svg>
         </EditorButton>
         <div className="h-6 w-px bg-gray-300"></div>
         <EditorButton onMouseDown={(e) => {e.preventDefault(); handleCommand('insertUnorderedList')}} title="Bulleted List">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" /><circle cx="2" cy="6" r="1" /><circle cx="2" cy="12" r="1" /><circle cx="2" cy="18" r="1" /></svg>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"></path></svg>
         </EditorButton>
         <EditorButton onMouseDown={(e) => {e.preventDefault(); handleCommand('insertOrderedList')}} title="Numbered List">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" /><text x="3" y="7.5" fontSize="3">1</text><text x="3" y="13.5" fontSize="3">2</text><text x="3" y="19.5" fontSize="3">3</text></svg>
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 6h13M8 12h13M8 18h13M3 6h1.5M3 12h1.5M3 18h1.5M4.5 6H3V5M4.5 12H3v-1M4.5 18H3v-1"></path></svg>
         </EditorButton>
       </div>
       <div
